@@ -11,12 +11,12 @@
         {
           "name": "Omen Boards",
           "architecture": "samd",
-          "version": "0.0.1",
+          "version": "0.0.2",
           "category": "Contributed",
-          "url": "https://github.com/crstffr/omen.boards/blob/main/Omen-0.0.1.zip?raw=true",
-          "archiveFileName": "Omen-0.0.1.zip",
-          "checksum": "SHA-256:587fa65aceaf6f3d76c162e70a944de243c2a47ce197ded8c9b8da1caf186e38",
-          "size": "95782",
+          "url": "https://github.com/crstffr/omen.boards/blob/main/Omen-0.0.2.zip?raw=true",
+          "archiveFileName": "Omen-0.0.2.zip",
+          "checksum": "SHA-256:f6d14d74be48927e20190cad63be5a50a4da1699a33c02bd362067c14c322e33",
+          "size": "1035155",
           "boards": [
             {
               "name": "Omen Labrys"
