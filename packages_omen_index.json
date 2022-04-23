@@ -11,6 +11,47 @@
         {
           "name": "Omen Boards",
           "architecture": "samd",
+          "version": "0.0.3",
+          "category": "Contributed",
+          "url": "https://github.com/crstffr/omen.boards/blob/main/Omen-0.0.3.zip?raw=true",
+          "archiveFileName": "Omen-0.0.3.zip",
+          "checksum": "SHA-256:5f8ee3f5b00cf7ac83e2f585c123cecfb9a5b3685714c9efaee7d5a03845cb6a",
+          "size": "1035142",
+          "boards": [
+            {
+              "name": "Omen Labrys"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "name": "arm-none-eabi-gcc",
+              "packager": "arduino",
+              "version": "4.8.3-2014q1"
+            },
+            {
+              "name": "bossac",
+              "packager": "arduino",
+              "version": "1.8.0-48-gb176eee"
+            },
+            {
+              "name": "openocd",
+              "packager": "arduino",
+              "version": "0.9.0-arduino"
+            },
+            {
+              "name": "CMSIS",
+              "packager": "arduino",
+              "version": "4.5.0"
+            },
+            {
+              "name": "CMSIS-Atmel",
+              "packager": "arduino",
+              "version": "1.2.0"
+            }
+          ]
+        },{
+          "name": "Omen Boards",
+          "architecture": "samd",
           "version": "0.0.2",
           "category": "Contributed",
           "url": "https://github.com/crstffr/omen.boards/blob/main/Omen-0.0.2.zip?raw=true",

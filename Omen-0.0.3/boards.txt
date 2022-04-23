@@ -23,7 +23,7 @@ omen_labrys.upload.native_usb=true
 # Build
 omen_labrys.build.mcu=cortex-m0plus
 omen_labrys.build.f_cpu=48000000L
-omen_labrys.build.usb_product="Labrys"
+omen_labrys.build.usb_product="Omen Labrys"
 omen_labrys.build.usb_manufacturer="Omen"
 omen_labrys.build.board=ITSYBITSY_M0
 omen_labrys.build.core=arduino
