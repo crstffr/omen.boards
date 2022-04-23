@@ -1,0 +1,56 @@
+{
+  "packages":
+  [
+    {
+      "name": "omen",
+      "maintainer": "Omen Audio",
+      "websiteURL": "https://omen.audio",
+      "email" : "info@omen.audio",
+      "platforms":
+      [
+        {
+          "name": "Omen Boards",
+          "architecture": "samd",
+          "version": "0.0.01",
+          "category": "Contributed",
+          "url": "https://github.com/crstffr/omen.boards/blob/master/Omen-0.0.1.zip?raw=true",
+          "archiveFileName": "Omen-0.0.1.zip",
+          "checksum": "SHA-256:1927B1B20B0FFA36D1F1BFBA028F90756CEE82B42227C898417ABCFA56ADC6F6",
+          "size": "8773152",
+          "boards": [
+            {
+              "name": "Omen Labrys"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "name": "arm-none-eabi-gcc",
+              "packager": "arduino",
+              "version": "4.8.3-2014q1"
+            },
+            {
+              "name": "bossac",
+              "packager": "arduino",
+              "version": "1.8.0-48-gb176eee"
+            },
+            {
+              "name": "openocd",
+              "packager": "arduino",
+              "version": "0.9.0-arduino"
+            },
+            {
+              "name": "CMSIS",
+              "packager": "arduino",
+              "version": "4.5.0"
+            },
+            {
+              "name": "CMSIS-Atmel",
+              "packager": "arduino",
+              "version": "1.2.0"
+            }
+          ],
+        }
+      ]
+    }
+  ]
+}
