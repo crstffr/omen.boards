@@ -33,7 +33,7 @@ omen_raven.build.openocdscript=openocd_scripts/itsybitsy_m0.cfg
 omen_raven.build.variant=itsybitsy_m0
 omen_raven.build.variant_system_lib=
 omen_raven.build.vid=0x239A
-omen_raven.build.pid=0x800F
+omen_raven.build.pid=0x800A
 omen_raven.bootloader.tool=openocd
 omen_raven.bootloader.file=itsybitsyM0/bootloader-itsybitsy_m0-v2.0.0-adafruit.5.bin
 
@@ -90,7 +90,7 @@ omen_conman.build.openocdscript=openocd_scripts/itsybitsy_m0.cfg
 omen_conman.build.variant=itsybitsy_m0
 omen_conman.build.variant_system_lib=
 omen_conman.build.vid=0x239A
-omen_conman.build.pid=0x800F
+omen_conman.build.pid=0x801A
 omen_conman.bootloader.tool=openocd
 omen_conman.bootloader.file=itsybitsyM0/bootloader-itsybitsy_m0-v2.0.0-adafruit.5.bin
 

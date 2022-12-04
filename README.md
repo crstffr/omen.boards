@@ -15,7 +15,7 @@ https://raw.githubusercontent.com/crstffr/omen.boards/main/packages_omen_index.j
 
 ```bash
 // Copy src to temp versioned folder
-cp ./src ./Omen-0.0.5
+cp -r ./src ./Omen-0.0.5
 
 // Zip the versioned folder
 zip -r Omen-0.0.5.zip ./Omen-0.0.5 
