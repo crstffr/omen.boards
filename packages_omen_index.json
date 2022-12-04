@@ -11,6 +11,50 @@
         {
           "name": "Omen Boards",
           "architecture": "samd",
+          "version": "0.0.5",
+          "category": "Contributed",
+          "url": "https://github.com/crstffr/omen.boards/blob/main/Omen-0.0.5.zip?raw=true",
+          "archiveFileName": "Omen-0.0.5.zip",
+          "checksum": "SHA-256:c72319e53fb032d3bb7046361352882b62df7394257d9dcb33c120dc12d3871b",
+          "size": "1019774",
+          "boards": [
+            {
+              "name": "Omen ConMan"
+            },
+            {
+              "name": "Omen Raven"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "name": "arm-none-eabi-gcc",
+              "packager": "arduino",
+              "version": "4.8.3-2014q1"
+            },
+            {
+              "name": "bossac",
+              "packager": "arduino",
+              "version": "1.8.0-48-gb176eee"
+            },
+            {
+              "name": "openocd",
+              "packager": "arduino",
+              "version": "0.9.0-arduino"
+            },
+            {
+              "name": "CMSIS",
+              "packager": "arduino",
+              "version": "4.5.0"
+            },
+            {
+              "name": "CMSIS-Atmel",
+              "packager": "arduino",
+              "version": "1.2.0"
+            }
+          ]
+        },{
+          "name": "Omen Boards",
+          "architecture": "samd",
           "version": "0.0.4",
           "category": "Contributed",
           "url": "https://github.com/crstffr/omen.boards/blob/main/Omen-0.0.4.zip?raw=true",

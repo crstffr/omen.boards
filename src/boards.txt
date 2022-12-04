@@ -5,11 +5,11 @@ omen_raven.name=Omen Raven
 
 # VID/PID for Bootloader, Arduino & CircuitPython
 omen_raven.vid.0=0x239A
-omen_raven.pid.0=0x800F
+omen_raven.pid.0=0x800A
 omen_raven.vid.1=0x239A
-omen_raven.pid.1=0x000F
+omen_raven.pid.1=0x800B
 omen_raven.vid.2=0x239A
-omen_raven.pid.2=0x8012
+omen_raven.pid.2=0x800C
 
 # Upload
 omen_raven.upload.tool=bossac18
@@ -61,12 +61,12 @@ omen_raven.menu.debug.on.build.flags.debug=-g
 omen_conman.name=Omen ConMan
 
 # VID/PID for Bootloader, Arduino & CircuitPython
-omen_conman.vid.0=0x239A
-omen_conman.pid.0=0x800F
-omen_conman.vid.1=0x239A
-omen_conman.pid.1=0x000F
-omen_conman.vid.2=0x239A
-omen_conman.pid.2=0x8012
+omen_raven.vid.0=0x239A
+omen_raven.pid.0=0x801A
+omen_raven.vid.1=0x239A
+omen_raven.pid.1=0x801B
+omen_raven.vid.2=0x239A
+omen_raven.pid.2=0x801C
 
 # Upload
 omen_conman.upload.tool=bossac18
