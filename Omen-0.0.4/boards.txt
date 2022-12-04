@@ -1,0 +1,113 @@
+# -----------------------------------
+# Omen Raven (based on Adafruit ItsyBitsy M0 Express)
+# -----------------------------------
+omen_raven.name=Omen Raven
+
+# VID/PID for Bootloader, Arduino & CircuitPython
+omen_raven.vid.0=0x239A
+omen_raven.pid.0=0x800F
+omen_raven.vid.1=0x239A
+omen_raven.pid.1=0x000F
+omen_raven.vid.2=0x239A
+omen_raven.pid.2=0x8012
+
+# Upload
+omen_raven.upload.tool=bossac18
+omen_raven.upload.protocol=sam-ba
+omen_raven.upload.maximum_size=262144
+omen_raven.upload.offset=0x2000
+omen_raven.upload.use_1200bps_touch=true
+omen_raven.upload.wait_for_upload_port=true
+omen_raven.upload.native_usb=true
+
+# Build
+omen_raven.build.mcu=cortex-m0plus
+omen_raven.build.f_cpu=48000000L
+omen_raven.build.usb_product="Omen Raven"
+omen_raven.build.usb_manufacturer="Omen"
+omen_raven.build.board=ITSYBITSY_M0
+omen_raven.build.core=arduino
+omen_raven.build.extra_flags=-D__SAMD21G18A__ -DCRYSTALLESS -DADAFRUIT_ITSYBITSY_M0 -DARDUINO_SAMD_ZERO -DARM_MATH_CM0PLUS {build.usb_flags}
+omen_raven.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+omen_raven.build.openocdscript=openocd_scripts/itsybitsy_m0.cfg
+omen_raven.build.variant=itsybitsy_m0
+omen_raven.build.variant_system_lib=
+omen_raven.build.vid=0x239A
+omen_raven.build.pid=0x800F
+omen_raven.bootloader.tool=openocd
+omen_raven.bootloader.file=itsybitsyM0/bootloader-itsybitsy_m0-v2.0.0-adafruit.5.bin
+
+# Menu
+omen_raven.menu.opt.small=Small (-Os) (standard)
+omen_raven.menu.opt.small.build.flags.optimize=-Os
+omen_raven.menu.opt.fast=Fast (-O2)
+omen_raven.menu.opt.fast.build.flags.optimize=-O2
+omen_raven.menu.opt.faster=Faster (-O3)
+omen_raven.menu.opt.faster.build.flags.optimize=-O3
+omen_raven.menu.opt.fastest=Fastest (-Ofast)
+omen_raven.menu.opt.fastest.build.flags.optimize=-Ofast
+omen_raven.menu.opt.dragons=Here be dragons (-Ofast -funroll-loops)
+omen_raven.menu.opt.dragons.build.flags.optimize=-Ofast -funroll-loops
+omen_raven.menu.usbstack.arduino=Arduino
+omen_raven.menu.usbstack.tinyusb=TinyUSB
+omen_raven.menu.usbstack.tinyusb.build.flags.usbstack=-DUSE_TINYUSB
+omen_raven.menu.debug.off=Off
+omen_raven.menu.debug.on=On
+omen_raven.menu.debug.on.build.flags.debug=-g
+
+# -----------------------------------
+# Omen ConMan (based on Adafruit ItsyBitsy M0 Express)
+# -----------------------------------
+omen_conman.name=Omen ConMan
+
+# VID/PID for Bootloader, Arduino & CircuitPython
+omen_conman.vid.0=0x239A
+omen_conman.pid.0=0x800F
+omen_conman.vid.1=0x239A
+omen_conman.pid.1=0x000F
+omen_conman.vid.2=0x239A
+omen_conman.pid.2=0x8012
+
+# Upload
+omen_conman.upload.tool=bossac18
+omen_conman.upload.protocol=sam-ba
+omen_conman.upload.maximum_size=262144
+omen_conman.upload.offset=0x2000
+omen_conman.upload.use_1200bps_touch=true
+omen_conman.upload.wait_for_upload_port=true
+omen_conman.upload.native_usb=true
+
+# Build
+omen_conman.build.mcu=cortex-m0plus
+omen_conman.build.f_cpu=48000000L
+omen_conman.build.usb_product="Omen ConMan"
+omen_conman.build.usb_manufacturer="Omen"
+omen_conman.build.board=ITSYBITSY_M0
+omen_conman.build.core=arduino
+omen_conman.build.extra_flags=-D__SAMD21G18A__ -DCRYSTALLESS -DADAFRUIT_ITSYBITSY_M0 -DARDUINO_SAMD_ZERO -DARM_MATH_CM0PLUS {build.usb_flags}
+omen_conman.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+omen_conman.build.openocdscript=openocd_scripts/itsybitsy_m0.cfg
+omen_conman.build.variant=itsybitsy_m0
+omen_conman.build.variant_system_lib=
+omen_conman.build.vid=0x239A
+omen_conman.build.pid=0x800F
+omen_conman.bootloader.tool=openocd
+omen_conman.bootloader.file=itsybitsyM0/bootloader-itsybitsy_m0-v2.0.0-adafruit.5.bin
+
+# Menu
+omen_conman.menu.opt.small=Small (-Os) (standard)
+omen_conman.menu.opt.small.build.flags.optimize=-Os
+omen_conman.menu.opt.fast=Fast (-O2)
+omen_conman.menu.opt.fast.build.flags.optimize=-O2
+omen_conman.menu.opt.faster=Faster (-O3)
+omen_conman.menu.opt.faster.build.flags.optimize=-O3
+omen_conman.menu.opt.fastest=Fastest (-Ofast)
+omen_conman.menu.opt.fastest.build.flags.optimize=-Ofast
+omen_conman.menu.opt.dragons=Here be dragons (-Ofast -funroll-loops)
+omen_conman.menu.opt.dragons.build.flags.optimize=-Ofast -funroll-loops
+omen_conman.menu.usbstack.arduino=Arduino
+omen_conman.menu.usbstack.tinyusb=TinyUSB
+omen_conman.menu.usbstack.tinyusb.build.flags.usbstack=-DUSE_TINYUSB
+omen_conman.menu.debug.off=Off
+omen_conman.menu.debug.on=On
+omen_conman.menu.debug.on.build.flags.debug=-g

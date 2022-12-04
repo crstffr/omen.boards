@@ -2,7 +2,8 @@
 
 Contains definitions for:
 
-1. Omen Labrys (based on Adafruit ItsyBitsy M0)
+1. Omen ConMan (based on Adafruit ItsyBitsy M0)
+1. Omen Raven  (based on Adafruit ItsyBitsy M0)
 
 ### Installation
 
