@@ -1,6 +1,140 @@
 # -----------------------------------
+# Omen Cobra (Based on Adafruit ItsyBitsy M4)
+# -----------------------------------
+
+omen_cobra.name=Omen Cobra
+
+# VID/PID for Bootloader, Arduino & CircuitPython
+omen_cobra.vid.0=0x239A
+omen_cobra.pid.0=0x802A
+omen_cobra.vid.1=0x239A
+omen_cobra.pid.1=0x802B
+omen_cobra.vid.2=0x239A
+omen_cobra.pid.2=0x802C
+/
+# Upload
+omen_cobra.upload.tool=bossac18
+omen_cobra.upload.protocol=sam-ba
+omen_cobra.upload.maximum_size=507904
+omen_cobra.upload.offset=0x4000
+omen_cobra.upload.use_1200bps_touch=true
+omen_cobra.upload.wait_for_upload_port=true
+omen_cobra.upload.native_usb=true
+
+# Build
+omen_cobra.build.mcu=cortex-m4
+omen_cobra.build.f_cpu=120000000L
+omen_cobra.build.usb_product="Omen Cobra"
+omen_cobra.build.usb_manufacturer="Omen"
+omen_cobra.build.board=ITSYBITSY_M4
+omen_cobra.build.core=arduino
+omen_cobra.build.extra_flags=-D__SAMD51G19A__ -DCRYSTALLESS -DADAFRUIT_ITSYBITSY_M4_EXPRESS -D__SAMD51__ -D__FPU_PRESENT -DARM_MATH_CM4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 {build.usb_flags}
+omen_cobra.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+omen_cobra.build.openocdscript=openocd_scripts/itsybitsy_m4.cfg
+omen_cobra.build.variant=itsybitsy_m4
+omen_cobra.build.variant_system_lib=
+omen_cobra.build.vid=0x239A
+omen_cobra.build.pid=0x802A
+omen_cobra.bootloader.tool=openocd
+omen_cobra.bootloader.file=itsybitsyM4/bootloader-itsybitsy_m4-v2.0.0-adafruit.5.bin
+omen_cobra.compiler.arm.cmsis.ldflags="-L{runtime.tools.CMSIS-5.4.0.path}/CMSIS/Lib/GCC/" "-L{build.variant.path}" -larm_cortexM4lf_math -mfloat-abi=hard -mfpu=fpv4-sp-d16
+
+# Menu
+omen_cobra.menu.cache.on=Enabled
+omen_cobra.menu.cache.on.build.cache_flags=-DENABLE_CACHE
+omen_cobra.menu.cache.off=Disabled
+omen_cobra.menu.cache.off.build.cache_flags=
+omen_cobra.menu.speed.120=120 MHz (standard)
+omen_cobra.menu.speed.120.build.f_cpu=120000000L
+omen_cobra.menu.speed.150=150 MHz (overclock)
+omen_cobra.menu.speed.150.build.f_cpu=150000000L
+omen_cobra.menu.speed.180=180 MHz (overclock)
+omen_cobra.menu.speed.180.build.f_cpu=180000000L
+omen_cobra.menu.speed.200=200 MHz (overclock)
+omen_cobra.menu.speed.200.build.f_cpu=200000000L
+omen_cobra.menu.opt.small=Small (-Os) (standard)
+omen_cobra.menu.opt.small.build.flags.optimize=-Os
+omen_cobra.menu.opt.fast=Fast (-O2)
+omen_cobra.menu.opt.fast.build.flags.optimize=-O2
+omen_cobra.menu.opt.faster=Faster (-O3)
+omen_cobra.menu.opt.faster.build.flags.optimize=-O3
+omen_cobra.menu.opt.fastest=Fastest (-Ofast)
+omen_cobra.menu.opt.fastest.build.flags.optimize=-Ofast
+omen_cobra.menu.opt.dragons=Here be dragons (-Ofast -funroll-loops)
+omen_cobra.menu.opt.dragons.build.flags.optimize=-Ofast -funroll-loops
+omen_cobra.menu.maxqspi.50=50 MHz (standard)
+omen_cobra.menu.maxqspi.50.build.flags.maxqspi=-DVARIANT_QSPI_BAUD_DEFAULT=50000000
+omen_cobra.menu.maxqspi.fcpu=CPU Speed / 2
+omen_cobra.menu.maxqspi.fcpu.build.flags.maxqspi=-DVARIANT_QSPI_BAUD_DEFAULT=({build.f_cpu})
+omen_cobra.menu.usbstack.arduino=Arduino
+omen_cobra.menu.usbstack.tinyusb=TinyUSB
+omen_cobra.menu.usbstack.tinyusb.build.flags.usbstack=-DUSE_TINYUSB
+omen_cobra.menu.debug.off=Off
+omen_cobra.menu.debug.on=On
+omen_cobra.menu.debug.on.build.flags.debug=-g
+
+# -----------------------------------
+# Omen Conman (based on Adafruit ItsyBitsy M0 Express)
+# -----------------------------------
+
+omen_conman.name=Omen Conman
+
+# VID/PID for Bootloader, Arduino & CircuitPython
+omen_conman.vid.0=0x239A
+omen_conman.pid.0=0x801A
+omen_conman.vid.1=0x239A
+omen_conman.pid.1=0x801B
+omen_conman.vid.2=0x239A
+omen_conman.pid.2=0x801C
+
+# Upload
+omen_conman.upload.tool=bossac18
+omen_conman.upload.protocol=sam-ba
+omen_conman.upload.maximum_size=262144
+omen_conman.upload.offset=0x2000
+omen_conman.upload.use_1200bps_touch=true
+omen_conman.upload.wait_for_upload_port=true
+omen_conman.upload.native_usb=true
+
+# Build
+omen_conman.build.mcu=cortex-m0plus
+omen_conman.build.f_cpu=48000000L
+omen_conman.build.usb_product="Omen Conman"
+omen_conman.build.usb_manufacturer="Omen"
+omen_conman.build.board=ITSYBITSY_M0
+omen_conman.build.core=arduino
+omen_conman.build.extra_flags=-D__SAMD21G18A__ -DCRYSTALLESS -DADAFRUIT_ITSYBITSY_M0 -DARDUINO_SAMD_ZERO -DARM_MATH_CM0PLUS {build.usb_flags}
+omen_conman.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+omen_conman.build.openocdscript=openocd_scripts/itsybitsy_m0.cfg
+omen_conman.build.variant=itsybitsy_m0
+omen_conman.build.variant_system_lib=
+omen_conman.build.vid=0x239A
+omen_conman.build.pid=0x801A
+omen_conman.bootloader.tool=openocd
+omen_conman.bootloader.file=itsybitsyM0/bootloader-itsybitsy_m0-v2.0.0-adafruit.5.bin
+
+# Menu
+omen_conman.menu.opt.small=Small (-Os) (standard)
+omen_conman.menu.opt.small.build.flags.optimize=-Os
+omen_conman.menu.opt.fast=Fast (-O2)
+omen_conman.menu.opt.fast.build.flags.optimize=-O2
+omen_conman.menu.opt.faster=Faster (-O3)
+omen_conman.menu.opt.faster.build.flags.optimize=-O3
+omen_conman.menu.opt.fastest=Fastest (-Ofast)
+omen_conman.menu.opt.fastest.build.flags.optimize=-Ofast
+omen_conman.menu.opt.dragons=Here be dragons (-Ofast -funroll-loops)
+omen_conman.menu.opt.dragons.build.flags.optimize=-Ofast -funroll-loops
+omen_conman.menu.usbstack.arduino=Arduino
+omen_conman.menu.usbstack.tinyusb=TinyUSB
+omen_conman.menu.usbstack.tinyusb.build.flags.usbstack=-DUSE_TINYUSB
+omen_conman.menu.debug.off=Off
+omen_conman.menu.debug.on=On
+omen_conman.menu.debug.on.build.flags.debug=-g
+
+# -----------------------------------
 # Omen Raven (based on Adafruit ItsyBitsy M0 Express)
 # -----------------------------------
+
 omen_raven.name=Omen Raven
 
 # VID/PID for Bootloader, Arduino & CircuitPython
@@ -54,60 +188,3 @@ omen_raven.menu.usbstack.tinyusb.build.flags.usbstack=-DUSE_TINYUSB
 omen_raven.menu.debug.off=Off
 omen_raven.menu.debug.on=On
 omen_raven.menu.debug.on.build.flags.debug=-g
-
-# -----------------------------------
-# Omen ConMan (based on Adafruit ItsyBitsy M0 Express)
-# -----------------------------------
-omen_conman.name=Omen ConMan
-
-# VID/PID for Bootloader, Arduino & CircuitPython
-omen_raven.vid.0=0x239A
-omen_raven.pid.0=0x801A
-omen_raven.vid.1=0x239A
-omen_raven.pid.1=0x801B
-omen_raven.vid.2=0x239A
-omen_raven.pid.2=0x801C
-
-# Upload
-omen_conman.upload.tool=bossac18
-omen_conman.upload.protocol=sam-ba
-omen_conman.upload.maximum_size=262144
-omen_conman.upload.offset=0x2000
-omen_conman.upload.use_1200bps_touch=true
-omen_conman.upload.wait_for_upload_port=true
-omen_conman.upload.native_usb=true
-
-# Build
-omen_conman.build.mcu=cortex-m0plus
-omen_conman.build.f_cpu=48000000L
-omen_conman.build.usb_product="Omen ConMan"
-omen_conman.build.usb_manufacturer="Omen"
-omen_conman.build.board=ITSYBITSY_M0
-omen_conman.build.core=arduino
-omen_conman.build.extra_flags=-D__SAMD21G18A__ -DCRYSTALLESS -DADAFRUIT_ITSYBITSY_M0 -DARDUINO_SAMD_ZERO -DARM_MATH_CM0PLUS {build.usb_flags}
-omen_conman.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
-omen_conman.build.openocdscript=openocd_scripts/itsybitsy_m0.cfg
-omen_conman.build.variant=itsybitsy_m0
-omen_conman.build.variant_system_lib=
-omen_conman.build.vid=0x239A
-omen_conman.build.pid=0x801A
-omen_conman.bootloader.tool=openocd
-omen_conman.bootloader.file=itsybitsyM0/bootloader-itsybitsy_m0-v2.0.0-adafruit.5.bin
-
-# Menu
-omen_conman.menu.opt.small=Small (-Os) (standard)
-omen_conman.menu.opt.small.build.flags.optimize=-Os
-omen_conman.menu.opt.fast=Fast (-O2)
-omen_conman.menu.opt.fast.build.flags.optimize=-O2
-omen_conman.menu.opt.faster=Faster (-O3)
-omen_conman.menu.opt.faster.build.flags.optimize=-O3
-omen_conman.menu.opt.fastest=Fastest (-Ofast)
-omen_conman.menu.opt.fastest.build.flags.optimize=-Ofast
-omen_conman.menu.opt.dragons=Here be dragons (-Ofast -funroll-loops)
-omen_conman.menu.opt.dragons.build.flags.optimize=-Ofast -funroll-loops
-omen_conman.menu.usbstack.arduino=Arduino
-omen_conman.menu.usbstack.tinyusb=TinyUSB
-omen_conman.menu.usbstack.tinyusb.build.flags.usbstack=-DUSE_TINYUSB
-omen_conman.menu.debug.off=Off
-omen_conman.menu.debug.on=On
-omen_conman.menu.debug.on.build.flags.debug=-g
