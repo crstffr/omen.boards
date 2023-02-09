@@ -11,7 +11,7 @@ omen_cobra.vid.1=0x239A
 omen_cobra.pid.1=0x802B
 omen_cobra.vid.2=0x239A
 omen_cobra.pid.2=0x802C
-/
+
 # Upload
 omen_cobra.upload.tool=bossac18
 omen_cobra.upload.protocol=sam-ba

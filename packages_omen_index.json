@@ -15,8 +15,8 @@
           "category": "Contributed",
           "url": "https://github.com/crstffr/omen.boards/blob/main/Omen-0.0.7.zip?raw=true",
           "archiveFileName": "Omen-0.0.7.zip",
-          "checksum": "SHA-256:8af215dd7db159eb1950c0f4630d7abc297a53ab9be4e4fd3413872da318e0b2",
-          "size": "1115568",
+          "checksum": "SHA-256:7abf8e8e336095de099ce0b657242f3d83692f3131246c9abc83d81976dbe0f0",
+          "size": "1115564",
           "boards": [
             {
               "name": "Omen Cobra"
